@@ -1,3 +1,11 @@
 {
-    "liveServer.settings.port": 5503
+    "liveServer.settings.port": 5503,
+    "auto-close-tag.enableAutoCloseSelfClosingTag": false,
+    "auto-close-tag.enableAutoCloseTag": false,
+    "html.autoClosingTags": true,
+    "prettier.arrowParens": "avoid",
+    "prettier.bracketSpacing": false,
+    "prettier.singleAttributePerLine": false,
+    "prettier.trailingComma": "none",
+    "prettier.useTabs": true
 }
