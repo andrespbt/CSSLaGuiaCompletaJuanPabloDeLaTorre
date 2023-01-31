@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Learning HTML</title>
-	</head>
-	<body>
-		<header>
-			<h1>Furniture store</h1>
-		</header>
-		<nav>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ecommerce - Home</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1 class="site-name">Furniture <span>Store</span></h1>
+	</header>
+	<div class="container-nav">
+		<nav class="nav-main">
 			<a href="index.html">Home</a>
 			<a href="about-us.html">About us</a>
 			<a href="store.html">Store</a>
@@ -18,154 +28,172 @@
 			<a href="gallery.html">Gallery</a>
 			<a href="contact.html">Contact</a>
 		</nav>
+	</div>
 
-		<section>
-			<h2>Products categories</h2>
-			<div>
+	<div class="hero">
+
+	</div>
+
+	<section class="container categories">
+		<h2 class="text-center">Products categories</h2>
+		<div class="list-category">
+			<div class="category">
 				<img src="img/category1.jpg" alt="Category image" />
 				<a href="#">Office</a>
 			</div>
-			<div>
+			<div class="category">
 				<img src="img/category2.jpg" alt="Category image" />
 				<a href="#">Home</a>
 			</div>
-			<div>
+			<div class="category">
 				<img src="img/category3.jpg" alt="Category image" />
 				<a href="#">Kitchen</a>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section>
-			<div>
+	<section class="about-us">
+		<div class="container about-us-grid">
+			<div class="text-about-us">
 				<h2>About Us</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum unde nihil dolorum quidem, illum saepe?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum unde nihil dolorum quidem,
+					illum
+					saepe?
 					Dolorum iste obcaecati accusamus architecto a vel atque qui quaerat ducimus, eius debitis rerum.
 				</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<main>
-			<h2>Our products</h2>
+	<main class="main-container container">
+		<h2 class="text-center">Our products</h2>
 
-			<div>
-				<div>
-					<img src="img/product1.jpg" alt="Product image" />
-					<div>
-						<h3>Product 1</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
+		<div class="product-list">
+			<div class="product">
+				<img src="img/product1.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 1</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
 				</div>
-				<!-- Product -->
-
-				<div>
-					<img src="img/product2.jpg" alt="Product image" />
-					<div>
-						<h3>Product 2</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
-				</div>
-				<!-- Product -->
-
-				<div>
-					<img src="img/product3.jpg" alt="Product image" />
-					<div>
-						<h3>Product 3</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
-				</div>
-				<!-- Product -->
-
-				<div>
-					<img src="img/product4.jpg" alt="Product image" />
-					<div>
-						<h3>Product 4</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
-				</div>
-				<!-- Product -->
-
-				<div>
-					<img src="img/product5.jpg" alt="Product image" />
-					<div>
-						<h3>Product 5</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
-				</div>
-				<!-- Product -->
-
-				<div>
-					<img src="img/product6.jpg" alt="Product image" />
-					<div>
-						<h3>Product 6</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur quisquam quos?
-						</p>
-						<p>$1,000.00</p>
-						<a href="#">Add to cart</a>
-					</div>
-					<!-- Info product -->
-				</div>
-				<!-- Product -->
+				<!-- Info product -->
 			</div>
-			<!-- End products lists -->
-		</main>
+			<!-- Product -->
 
-		<footer>
-			<div>
-				<h3>Categories</h3>
-				<nav>
-					<a href="#">Kitchen</a>
-					<a href="#">Office</a>
-					<a href="#">Garden</a>
-					<a href="#">Garage</a>
-					<a href="#">Bedroom</a>
-				</nav>
+			<div class="product">
+				<img src="img/product2.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 2</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
+				</div>
+				<!-- Info product -->
 			</div>
-			<div>
-				<h3>Aboust Us</h3>
-				<nav>
-					<a href="#">Our history</a>
-					<a href="#">Mission, Vision, Values</a>
-					<a href="#">Careers</a>
-					<a href="#">Privacy Policy</a>
-					<a href="#">Terms of Service</a>
-				</nav>
+			<!-- Product -->
+
+			<div class="product">
+				<img src="img/product3.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 3</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
+				</div>
+				<!-- Info product -->
 			</div>
-			<div>
-				<h3>Support</h3>
-				<nav>
-					<a href="#">FAQ</a>
-					<a href="#">Online help</a>
-					<a href="#">Trust and Security</a>
-				</nav>
+			<!-- Product -->
+
+			<div class="product">
+				<img src="img/product4.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 4</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
+				</div>
+				<!-- Info product -->
 			</div>
-			<p>All rights reserved, FurnitureStore</p>
-		</footer>
-	</body>
+			<!-- Product -->
+
+			<div class="product">
+				<img src="img/product5.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 5</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
+				</div>
+				<!-- Info product -->
+			</div>
+			<!-- Product -->
+
+			<div class="product">
+				<img src="img/product6.jpg" alt="Product image" />
+				<div class="text-product">
+					<h3>Product 6</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta, veniam obcaecati tenetur
+						quisquam quos?
+					</p>
+					<p class="price">$1,000.00</p>
+					<a class="btn" href="#">Add to cart</a>
+				</div>
+				<!-- Info product -->
+			</div>
+			<!-- Product -->
+		</div>
+		<!-- End products lists -->
+	</main>
+
+	<footer class="footer-container">
+		<div class="container footer-grid">
+			<h3>Categories</h3>
+			<nav class="footer-nav-flex">
+				<a href="#">Kitchen</a>
+				<a href="#">Office</a>
+				<a href="#">Garden</a>
+				<a href="#">Garage</a>
+				<a href="#">Bedroom</a>
+			</nav>
+		</div>
+		<div class="container footer-grid">
+			<h3>Aboust Us</h3>
+			<nav class="container footer-nav-flex">
+				<a href="#">Our history</a>
+				<a href="#">Mission, Vision, Values</a>
+				<a href="#">Careers</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+			</nav>
+		</div>
+		<div class="container footer-grid">
+			<h3>Support</h3>
+			<nav class="footer-nav-flex">
+				<a href="#">FAQ</a>
+				<a href="#">Online help</a>
+				<a href="#">Trust and Security</a>
+			</nav>
+		</div>
+		<p class="footer-copyright">All rights reserved, FurnitureStore</p>
+	</footer>
+</body>
+
 </html>
