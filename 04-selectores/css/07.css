@@ -1,0 +1,7 @@
+
+.texto, 
+.oferta,
+.tercer-elemento {
+    border: 3px solid yellow;
+    padding: 2rem;
+}

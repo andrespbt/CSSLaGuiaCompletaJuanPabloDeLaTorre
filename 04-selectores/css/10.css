@@ -1,0 +1,7 @@
+a[href$=".com"] {
+    color: red;
+}
+
+#telefono {
+    border: 5px solid red;
+}
