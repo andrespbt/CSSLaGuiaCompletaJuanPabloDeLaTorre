@@ -80,6 +80,18 @@ img {
 	transition: background-color 0.3s ease-out;
 	text-align: center;
 	border: none;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+	
+}
+@media (min-width: 768px) { 
+	.btn {
+		width: auto;
+		max-width: unset;
+		
+	}
+ 
 }
 .btn:hover {
 	background-color: #769c02;
@@ -429,4 +441,26 @@ img {
 	flex: 1;
 	border: 1px solid #e1e1e1;
 	padding: 1rem;
+}
+
+/* Galeria */
+.galeria {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+@media (min-width: 768px) { 
+	.galeria {
+		grid-template-columns: repeat(3, 1fr);
+	}
+ 
+}
+
+.galeria img {
+	height: 40rem;
+	width: 40rem;
+	object-fit: cover;
 }
