@@ -69,6 +69,15 @@ img {
 	text-align: center;
 }
 
+/** Gradients **/
+
+.green-gradient {
+	color: transparent;
+	background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
 /* Header */
 
 .header {
@@ -103,7 +112,7 @@ img {
 	}
 }
 
-.text-header p{
+.text-header p {
 	margin: 0;
 }
 
@@ -124,7 +133,78 @@ img {
 	}
 }
 
-.price-product span{
+.price-product span {
 	font-size: 6rem;
 	font-weight: 900;
+}
+
+/* Icons */
+
+.icons {
+	padding: var(--separacion) 0;
+}
+
+@media (min-width: 768px) {
+	.icons {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+}
+
+.icon {
+	text-align: center;
+	margin-bottom: calc(var(--separacion) / 2);
+}
+
+.icon:last-of-type {
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+	.icon {
+		margin: 0;
+	}
+}
+
+.icon img {
+	width: 5rem;
+	margin: 0 auto;
+}
+
+.icon h3 {
+	color: var(--primario);
+	text-transform: uppercase;
+	margin-top: calc(var (--separacion) / 2);
+}
+
+/* About tech */
+
+.about-tech {
+	background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+	background-position: right;
+	background-repeat: repeat, no-repeat;
+	background-size: 100%, 110rem;
+}
+
+.about-tech-grid {
+	display: grid;
+	grid-template-rows: repeat(2, 40rem);
+	row-gap: var(--separacion);
+}
+
+.text-about-tech {
+	grid-row: 2/3;
+	color: var(--blanco);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.text-about-tech h2 {
+	font-size: 4rem;
+}
+.text-about-tech p {
+	font-size: 2rem;
+	line-height: 2;
 }
